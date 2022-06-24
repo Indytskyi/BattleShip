@@ -2,3 +2,5 @@ content:
 - Throwing exceptions
 - Custom exceptions
 - Input streams
+- Enums in Java
+- Fields and methods in enum

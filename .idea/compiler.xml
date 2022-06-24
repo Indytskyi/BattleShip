@@ -13,6 +13,12 @@
       <module name="Battleship.Topics-Custom_exceptions-Custom_exceptions_features.main" target="11" />
       <module name="Battleship.Topics-Custom_exceptions-Square_class.main" target="11" />
       <module name="Battleship.Topics-Custom_exceptions-Theory.main" target="11" />
+      <module name="Battleship.Topics-Enums_in_Java-Hidden_enumeration.main" target="11" />
+      <module name="Battleship.Topics-Enums_in_Java-Reasons_to_use_enum.main" target="11" />
+      <module name="Battleship.Topics-Enums_in_Java-Theory.main" target="11" />
+      <module name="Battleship.Topics-Fields_and_methods_in_enum-Danger_levels.main" target="11" />
+      <module name="Battleship.Topics-Fields_and_methods_in_enum-System_of_units.main" target="11" />
+      <module name="Battleship.Topics-Fields_and_methods_in_enum-Theory.main" target="11" />
       <module name="Battleship.Topics-Input_streams-Count_words.main" target="11" />
       <module name="Battleship.Topics-Input_streams-Read_into_an_array.main" target="11" />
       <module name="Battleship.Topics-Input_streams-Theory.main" target="11" />

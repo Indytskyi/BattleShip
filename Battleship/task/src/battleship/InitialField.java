@@ -43,13 +43,15 @@ public class InitialField {
             inputShip(sizeOfShip, nameOfShip[i]);
             i++;
         }
-
-
     }
 
     public void startGame() {
+        FogField fogField = new FogField();
+
         System.out.println("The game starts!\n");
-        showPlayingField();
+        fogField.showPlayingField();
+
+
         int shotColumn = 0;
         String shotRow = null;
         System.out.println("Take a shot!\n");
@@ -64,14 +66,24 @@ public class InitialField {
                 if (playingField[shotRow.charAt(0) - 'A' + 1][shotColumn].equals("O")) {
 
                     playingField[shotRow.charAt(0) - 'A' + 1][shotColumn] = "X";
+
+                    fogField.setPlayingFogField(shotRow.charAt(0) - 'A' + 1, shotColumn, "X");
+                    fogField.showPlayingField();
+
+                    System.out.println("You hit a ship!\n");
+
                     showPlayingField();
 
-                    System.out.println("You hit a ship!");
                 } else {
                     playingField[shotRow.charAt(0) - 'A' + 1][shotColumn] = "M";
+
+                    fogField.setPlayingFogField(shotRow.charAt(0) - 'A' + 1, shotColumn, "X");
+                    fogField.showPlayingField();
+
+                    System.out.println("You missed!\n");
+
                     showPlayingField();
 
-                    System.out.println("You missed!");
                 }
                 return;
             } catch (Exception e) {
@@ -129,12 +141,12 @@ public class InitialField {
 
                 if (rowOfStartPosition.equals(rowOfFinishPosition)) {
                     if (Math.abs(columnOfFinishPosition - columnOfStartPosition) != sizeOfShip - 1) {
-                        System.out.println("Error! Wrong length of the Submarine! Try again:");
+                        System.out.printf("Error! Wrong length of the %s! Try again:\n", nameOfShip);
                         continue;
                     }
                 } else if (columnOfStartPosition == columnOfFinishPosition) {
                     if (Math.abs(rowOfFinishPosition.charAt(0) - rowOfStartPosition.charAt(0)) != sizeOfShip - 1) {
-                        System.out.println("Error! Wrong length of the Submarine! Try again:");
+                        System.out.printf("Error! Wrong length of the %s! Try again:\n", nameOfShip);
                         continue;
                     }
                 } else {
@@ -145,6 +157,8 @@ public class InitialField {
 
                 int columnStartCheck;
                 int columnFinishCheck;
+                int rowStartCheck;
+                int rowFinishCheck;
 
                 if (columnOfStartPosition - 1 == 0) {
                     columnStartCheck = columnOfStartPosition;
@@ -156,9 +170,6 @@ public class InitialField {
                     columnStartCheck = columnOfStartPosition - 1;
                     columnFinishCheck = columnOfFinishPosition + 1;
                 }
-
-                int rowStartCheck;
-                int rowFinishCheck;
 
                 if (rowOfStartPosition.charAt(0) - 'A' == 0) {
                     rowStartCheck = 1;
@@ -174,6 +185,7 @@ public class InitialField {
                 check = checkForAnotherShip(columnStartCheck, columnFinishCheck,
                         rowStartCheck, rowFinishCheck);
 
+
             } catch (NumberFormatException e) {
                 System.out.println("Your second part of coordinates must contains digits between (1-10)");
                 check = false;
@@ -186,24 +198,27 @@ public class InitialField {
 
         for (int i = rowOfStartPosition.charAt(0) - 'A' + 1; i <= rowOfFinishPosition.charAt(0) - 'A' + 1; i++) {
             for (int j = columnOfStartPosition; j <= columnOfFinishPosition; j++) {
+
                 playingField[i][j] = "O";
             }
         }
 
         showPlayingField();
-
-
     }
 
 
     private boolean checkForAnotherShip(int columnStartCheck, int columnFinishCheck,
                                         int rowStartCheck, int rowFinishCheck) {
+
         for (int i = rowStartCheck; i <= rowFinishCheck; i++) {
+
             for (int j = columnStartCheck; j <= columnFinishCheck; j++) {
+
                 if (playingField[i][j].equals("O")) {
                     System.out.println("Error! You placed it too close to another one. Try again:");
                     return false;
                 }
+
             }
         }
 

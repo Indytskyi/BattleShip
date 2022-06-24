@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-06-24T07:49:35" hostname="C9252" time="0.235">
+<testsuite name="Tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-06-24T08:52:41" hostname="C9252" time="0.321">
   <properties/>
-  <testcase name="start" classname="Tests" time="0.235"/>
+  <testcase name="start" classname="Tests" time="0.321"/>
   <system-out><![CDATA[?[1;31m
 Start test 1?[0m
   1 2 3 4 5 6 7 8 9 10 
@@ -106,21 +106,35 @@ J ~ O ~ ~ ~ ~ ~ O O O
 The game starts!
 
   1 2 3 4 5 6 7 8 9 10 
-A O ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-B O ~ ~ ~ ~ ~ ~ ~ O ~ 
-C O ~ ~ ~ ~ ~ ~ ~ O ~ 
-D O ~ ~ ~ ~ ~ ~ ~ O ~ 
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-F ~ ~ O O O O O ~ ~ ~ 
+F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-I ~ O ~ ~ ~ ~ ~ ~ ~ ~ 
-J ~ O ~ ~ ~ ~ ~ O O O 
+I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
 Take a shot!
 
 Error! You entered the wrong coordinates! Try again:
 > A1
+  1 2 3 4 5 6 7 8 9 10 
+A X ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+
+You hit a ship!
+
   1 2 3 4 5 6 7 8 9 10 
 A X ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 B O ~ ~ ~ ~ ~ ~ ~ O ~ 
@@ -133,7 +147,6 @@ H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 I ~ O ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ O ~ ~ ~ ~ ~ O O O 
 
-You hit a ship!
 ?[1;31m
 Start test 2?[0m
   1 2 3 4 5 6 7 8 9 10 
@@ -166,7 +179,7 @@ J ~ ~ O O O O O ~ ~ ~
 Enter the coordinates of the Battleship (4 cells):
 
 > C8 B8
-Error! Wrong length of the Submarine! Try again:
+Error! Wrong length of the Battleship! Try again:
 Enter the coordinates of the Battleship (4 cells):
 
 > C8 F8
@@ -219,7 +232,7 @@ J ~ ~ O O O O O ~ ~ ~
 Enter the coordinates of the Destroyer (2 cells):
 
 > G2 E2
-Error! Wrong length of the Submarine! Try again:
+Error! Wrong length of the Destroyer! Try again:
 Enter the coordinates of the Destroyer (2 cells):
 
 > B5 C5
@@ -238,16 +251,16 @@ J ~ ~ O O O O O ~ ~ ~
 The game starts!
 
   1 2 3 4 5 6 7 8 9 10 
-A O ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-B O ~ ~ ~ O ~ ~ ~ ~ ~ 
-C O ~ ~ ~ O ~ ~ O ~ ~ 
-D ~ ~ ~ ~ ~ ~ ~ O ~ ~ 
-E ~ ~ ~ ~ ~ ~ ~ O ~ ~ 
-F ~ ~ ~ ~ ~ ~ ~ O ~ ~ 
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-H O O O ~ ~ ~ ~ ~ ~ ~ 
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-J ~ ~ O O O O O ~ ~ ~ 
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
 Take a shot!
 
@@ -257,6 +270,20 @@ Error! You entered the wrong coordinates! Try again:
 > A11
 Error! You entered the wrong coordinates! Try again:
 > E4
+  1 2 3 4 5 6 7 8 9 10 
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+E ~ ~ ~ X ~ ~ ~ ~ ~ ~ 
+F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+
+You missed!
+
   1 2 3 4 5 6 7 8 9 10 
 A O ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 B O ~ ~ ~ O ~ ~ ~ ~ ~ 
@@ -269,7 +296,6 @@ H O O O ~ ~ ~ ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ O O O O O ~ ~ ~ 
 
-You missed!
 ?[1;31m
 Start test 3?[0m
   1 2 3 4 5 6 7 8 9 10 
@@ -302,7 +328,7 @@ J ~ ~ O O O O O ~ ~ ~
 Enter the coordinates of the Battleship (4 cells):
 
 > C8 B8
-Error! Wrong length of the Submarine! Try again:
+Error! Wrong length of the Battleship! Try again:
 Enter the coordinates of the Battleship (4 cells):
 
 > C8 F8
@@ -355,7 +381,7 @@ J ~ ~ O O O O O ~ ~ ~
 Enter the coordinates of the Destroyer (2 cells):
 
 > G2 E2
-Error! Wrong length of the Submarine! Try again:
+Error! Wrong length of the Destroyer! Try again:
 Enter the coordinates of the Destroyer (2 cells):
 
 > E5 F5
@@ -374,21 +400,35 @@ J ~ ~ O O O O O ~ ~ ~
 The game starts!
 
   1 2 3 4 5 6 7 8 9 10 
-A O ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-B O ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-C O ~ ~ ~ ~ ~ ~ O ~ ~ 
-D ~ ~ ~ ~ ~ ~ ~ O ~ ~ 
-E ~ ~ ~ ~ O ~ ~ O ~ ~ 
-F ~ ~ ~ ~ O ~ ~ O ~ ~ 
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-H O O O ~ ~ ~ ~ ~ ~ ~ 
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
-J ~ ~ O O O O O ~ ~ ~ 
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
 Take a shot!
 
 Error! You entered the wrong coordinates! Try again:
 > E8
+  1 2 3 4 5 6 7 8 9 10 
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+E ~ ~ ~ ~ ~ ~ ~ X ~ ~ 
+F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+
+You hit a ship!
+
   1 2 3 4 5 6 7 8 9 10 
 A O ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 B O ~ ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -401,7 +441,6 @@ H O O O ~ ~ ~ ~ ~ ~ ~
 I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 J ~ ~ O O O O O ~ ~ ~ 
 
-You hit a ship!
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
