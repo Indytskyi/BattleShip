@@ -1,12 +1,14 @@
 package battleship;
 
+import battleship.test.GameShips;
+import battleship.test.PlayingField;
+
 public class Main {
 
     public static void main(String[] args) {
-        // Write your code here
-        InitialField initialField = new InitialField();
-        initialField.showPlayingField();
-        initialField.arrangeShipOnTheGameField();
-        initialField.startGame();
+        PlayingField playingField = new PlayingField();
+        GameShips gameShips = new GameShips();
+        gameShips.initializationOfShip(playingField);
+        gameShips.startGame(playingField);
     }
 }
