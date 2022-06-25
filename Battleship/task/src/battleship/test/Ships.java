@@ -7,6 +7,8 @@ public enum Ships {
     CRUISER("Cruiser", 3, new int[][] {}),
     DESTROYER("Destroyer", 2, new int[][] {});
 
+
+
     private final String TYPE_OF_SHIP;
     private final int SIZE;
     private int[][] shipCoordinates;
@@ -49,6 +51,8 @@ public enum Ships {
            }
         }
     }
+
+
 
     public String getTypeOfShip() {
         return TYPE_OF_SHIP;

@@ -60,9 +60,9 @@ public class ValidationOfField {
         int[][] shipCoordinates = playingField.getShip().getShipCoordinates();
         int lengthOfShip = playingField.getShip().getSize();
         int startI = shipCoordinates[0][0] -1;
-        int finishI = shipCoordinates[0][lengthOfShip - 1] + 1;
+        int finishJ = shipCoordinates[0][lengthOfShip - 1] + 1;
         int startJ = shipCoordinates[1][0] -1;
-        int finishJ = shipCoordinates[1][lengthOfShip - 1] + 1;
+        int finishI = shipCoordinates[1][lengthOfShip - 1] + 1;
 
         for (int i = startI; i < finishI; i++) {
             for (int j = startJ; j < finishJ; j++) {
